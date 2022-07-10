@@ -1,3 +1,6 @@
+<?php 
+  include 'connect.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +21,21 @@
 
 </head>
 <body>
+
+<?php 
+    if(isset($_POST['submitBtn'])){
+        $firstName = filter_var($_POST['firstName'], FILTER_SANITIZE_STRING);
+        $lastName = filter_var($_POST['lastName'], FILTER_SANITIZE_STRING);
+        $name = $firstName . " " . $lastName;
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+        $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+
+        $sql="insert into contact_messages (Date,Name,Email,Message) values('$currentDate','$name','$email','$message')";
+        $result=$conn->prepare($sql);
+        $result->execute();
+    }
+  ?>
+
 						<nav class="rp-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
    <div class="container-fluid">
     <a class="navbar-brand text-uppercase fw-bolder mx-4 py-3" href="#"> Brasserie "Le Schkeel"</a>
@@ -38,14 +56,14 @@
           <a class="btn-order nav-link" aria-current="page" href="#">Acceuil</a>
         </li>
         <li class="nav-item pe-4">
-          <a href="menu.html" class="btn-order nav-link" href="#">Nos Menus</a>
+          <a href="menu.php" class="btn-order nav-link" href="#">Nos Menus</a>
         </li>
         <li class="nav-item pe-4">
-          <a href="pictures.html" class="btn-order nav-link" href="#">Photos</a>
+          <a href="pictures.php" class="btn-order nav-link" href="#">Photos</a>
         </li>
       </ul>
       <span class="navbar-item pe-4">
-        <a href="contact.html" class="btn btn-order rounded -8" href="#">Contact</a>
+        <a href="contact.php" class="btn btn-order rounded -8" href="#">Contact</a>
       </span>
     </div>
    </div>
@@ -88,4 +106,4 @@
    
    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-</html>
+</hphp

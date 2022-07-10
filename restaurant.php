@@ -38,14 +38,14 @@
           <a class="btn-order nav-link" aria-current="page" href="#">Acceuil</a>
         </li>
         <li class="nav-item pe-4">
-          <a href="menu.html" class="btn-order nav-link" href="#">Nos Menus</a>
+          <a href="menu.php" class="btn-order nav-link" href="#">Nos Menus</a>
         </li>
         <li class="nav-item pe-4">
-          <a href="pictures.html" class="btn-order nav-link" href="#">Photos</a>
+          <a href="pictures.php" class="btn-order nav-link" href="#">Photos</a>
         </li>
       </ul>
       <span class="navbar-item pe-4">
-        <a href="contact.html" class="btn btn-order rounded -8" href="#">Contact</a>
+        <a href="contact.php" class="btn btn-order rounded -8" href="#">Contact</a>
       </span>
     </div>
    </div>
@@ -197,4 +197,4 @@
    <!-- live server subl text -->
    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-</html>
+</hphp

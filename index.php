@@ -20,7 +20,7 @@
 <body>
 						<nav class="rp-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
    <div class="container-fluid">
-    <a href="restaurant.html" class="navbar-brand text-uppercase fw-bolder mx-4 py-3" href="#"> Brasserie "Le Schkeel"</a>
+    <a href="restaurant.php" class="navbar-brand text-uppercase fw-bolder mx-4 py-3" href="#"> Brasserie "Le Schkeel"</a>
     <button
     class="navbar-toggler" 
     type="button" 
@@ -35,21 +35,21 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item pe-4">
-          <a href="restaurant.html"  class="btn-order nav-link" aria-current="page" href="#">Acceuil</a>
+          <a href="restaurant.php"  class="btn-order nav-link" aria-current="page" href="#">Acceuil</a>
         </li>
         <li class="nav-item pe-4">
-          <a href="menu.html" class="btn-order nav-link" href="#">Nos Menus</a>
+          <a href="menu.php" class="btn-order nav-link" href="#">Nos Menus</a>
         </li>
         <li class="nav-item pe-4">
-          <a href="pictures.html" class="btn-order nav-link" href="#">Photos</a>
+          <a href="pictures.php" class="btn-order nav-link" href="#">Photos</a>
         </li>
         <li class="nav-item  pe-4">
-          <a href="guestbook.html" class="btn-order nav-link" href="#">Avis</a>
+          <a href="guestbook.php" class="btn-order nav-link" href="#">Avis</a>
 
         </li>
       </ul>
       <span class="navbar-item pe-4">
-        <a href="contact.html" class="btn btn-order rounded -8" href="#">Contact</a>
+        <a href="contact.php" class="btn btn-order rounded -8" href="#">Contact</a>
       </span>
     </div>
    </div>
